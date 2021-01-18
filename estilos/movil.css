@@ -1,5 +1,54 @@
+*{margin:0;
+padding: 0;
+box-sizing: border-box}
+
+body{
+	color: #666
+}
+
+header{
+	background-color: rgb(255,255,255,0.8)
+		
+}
+main{
+	background-color: rgb(255,255,255,0.5)
+}
+
+li{
+	list-style: none;
+	background-color: #AAA;
+	height: 30px;
+}
+aside{
+	background-color: rgb(255,255,255,0.3)
+}
+
+footer{
+	background-color: rgb(255,255,255,0.1)
+}
+
+
+
+
 @media screen and (max-width:480px){
-	body{
-		background-color: tomato
+body{
+	background-color: tomato
 	}
+	
+header{
+	height: 100px
+		
+}
+main{
+	height: 300px
+}
+
+aside{
+	height: 200px
+}
+
+footer{
+	height: 100px
+}
+
 }

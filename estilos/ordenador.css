@@ -2,4 +2,25 @@
 	body{
 		background-color: blue
 	}
+		
+header{
+	height: 100px
+		
+}
+main{
+	height: 300px;
+	width: 70%;
+	float: left
+}
+
+aside{
+	height: 200px;
+	width: 30%;
+	
+}
+
+footer{
+	height: 100px
+}
+
 }

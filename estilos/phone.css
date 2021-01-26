@@ -1,0 +1,113 @@
+/*el corte de pantalla lo mete en 480px en vertical y 768 en horizontal*/
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+/*div, li{
+	padding: 10px;
+}*/
+body{
+	color: #666;
+}
+li{
+	list-style-type: none;
+	background-color: #aaa;
+	/*height: 90px;*/
+	/*margin: 10px;*/
+	/*border: solid 3px #fff;*/
+}
+a{
+	display: block;
+	text-decoration: none;
+	/*background-color: #DDD;
+	color: black;*/
+	height: 40px;
+	padding-top: 10px;
+}
+#header{
+	background-color: rgba(255,255,255,0.8);
+	/*z-index: 5;*/
+	position: fixed;
+	top: 0;
+	left: 0;
+	/*width: 100%;*/
+}
+/*#menu{
+	background-color: transparent;
+}*/
+#menu > li{
+	/*height: 50px;*/
+	/*margin: 10px;*/
+	background-color: yellow;
+}
+#main{
+	background-color: rgba(255,255,255,0.5);
+	
+}
+#aside{
+	background-color: rgba(255,255,255,0.3);
+	/*margin-top: 100px;*/
+}
+#footer{
+	background-color: rgba(255,255,255,0.1);
+}
+@media screen and (max-width: 480px){
+	body{
+		background-color: tomato;
+	}
+	#header{
+		height: 50px;
+		width: 100%;
+	
+	}
+	#header h1{
+		width: 50%;
+		float: left;
+		padding-top: 9px;
+padding-left: 58px;
+	}
+	.checked{
+		width: 50px;
+		height: 50px;
+		position: absolute;
+		top: 0;
+		left: 0;
+		opacity: 0;
+		z-index: 2;
+	}
+	/* ~esto se mone con alt mas ñ*/
+	.checked:checked ~ #menu{
+		left: 0;
+		transition: 1s;
+	}
+	#burguer{
+		background-color: violet;
+		width: 50px;
+		height: 50px;
+		padding-top: 8px;
+	}
+	#burguer li{
+		background-color: white;
+		width: 30px;
+		height: 5px;
+		margin: 5px 8px;
+		border-radius: 15%;
+	}
+	#menu{
+		position: absolute;
+		top: 50px;
+		left: -100%;
+		width: 100%;
+		transition: 1s;
+	}
+	#main{
+		margin-top: 50px;
+	}
+	#aside{
+		
+	}
+	#footer{
+		height: 100px;
+	}
+}

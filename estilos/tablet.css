@@ -1,38 +1,66 @@
-@media screen and (min-width:481px){
+/*768px de corte
+A partir de este empezaremos a hacer el menú hamburguesa*/
+@media screen and (min-width: 481px){
 	body{
-		background-color: yellow
+		background-color: yellowgreen;
 	}
-		
-header{
-	height: 100px
-		
-}
-main{
-	height: 300px
-}
-li{
-	width:50%;
-	float:left
-}
-
-section{
-width: 100%;
-overflow: hidden /*porque las etiquetas de dentro del aside estarán flotadas*/}
-
-.bloque{ 
-width: 50%; /*aquí pondremos según las columnas que queremos, 50% para 2 columnas, 25% para 4 columnas…*/
-height: 30px;  /*para que todos los bloques tengan la misma medida*/
-float: left;
-background-color: #AAA; /*si el bloque tuviera un color para separarlo del bloque siguiente no se podría poner margin porque se desborda, se tendría que bajar el porcentaje del width*/
-border: 2px solid yellow /*esto se podría poner para ver visualmente una separación entre bloques aunque no la haya*/}
-
-.bloquegrande{ /*esto es para centrar*/
-width: 70%;
-margin: 0 auto}
-
-footer{
-	height: 100px;
-clear: both
-}
-
+	#main li{
+		width: 50%;
+		float: left;
+	}
+	#header{
+		height: 50px;
+		width: 100%;
+	
+	}
+	#header h1{
+		width: 50%;
+		float: left;
+		padding-top: 9px;
+padding-left: 58px;
+	}
+	.checked{
+		width: 50px;
+		height: 50px;
+		position: absolute;
+		top: 0;
+		left: 0;
+		opacity: 0;
+		z-index: 2;
+	}
+	/* ~esto se mone con alt mas ñ*/
+	.checked:checked ~ #menu{
+		left: 0;
+		transition: 1s;
+	}
+	#burguer{
+		background-color: violet;
+		width: 50px;
+		height: 50px;
+		padding-top: 8px;
+	}
+	#burguer li{
+		background-color: white;
+		width: 30px;
+		height: 5px;
+		margin: 5px 8px;
+		border-radius: 15%;
+	}
+	#menu{
+		position: absolute;
+		top: 50px;
+		left: -100%;
+		width: 100%;
+		transition: 1s;
+	}
+	#main{
+		overflow: hidden;
+		margin-top: 50px;
+	}
+	#aside{
+		overflow: hidden;
+	}
+	#footer{
+		height: 100px;
+	}
 }

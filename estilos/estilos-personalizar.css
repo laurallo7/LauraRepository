@@ -1,0 +1,58 @@
+.fotoss{ 
+    width:30px;
+    border-radius: 50%
+  }
+
+  .red{
+     border: 15px red solid;
+  }
+  .blue{
+     border: 15px blue solid;
+  }
+
+.black{
+     border: 15px black solid;
+  }
+
+
+
+
+  .section2{
+    text-align: center
+  }
+  #f1 {
+    width: 50%;
+    z-index: -5;
+    position: relative;
+
+  }
+  #mini {
+    position: absolute;
+ 
+    top: 131px;
+    right: 70px;}
+
+    h1 {
+    font-size: 31px;
+ 
+    margin: 0;
+    padding: 0;
+}
+.texto {
+    position: absolute;
+    padding: 70px;
+    text-align: left;
+    z-index: -4}
+
+ h6 {
+    font-size: 19px;
+    color: gray;
+}
+
+.bola {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      display: inline-block;
+  
+    }

@@ -157,6 +157,7 @@ right: 0px; /* esto está puesto para que al clickar el menú hamburguesa aparez
 
 header {
 height: 50px; /*El espacio que ocupa a lo largo*/
+position: fixed; /*El header se queda fijo flotando encima del main*/
 top: 0
 left: 0    /* Para que el header quede totalmente arriba y que ocupe todo*/
 right: 0
